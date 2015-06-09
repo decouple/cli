@@ -1,0 +1,12 @@
+{
+    "name": "decouple/cli",
+    "description": "Hack command line utility created for Decouple framework.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Ewing",
+            "email": "drew@phenocode.com"
+        }
+    ],
+    "require": {}
+}
