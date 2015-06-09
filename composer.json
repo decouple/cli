@@ -9,7 +9,11 @@
         }
     ],
     "require": {},
-    "psr-4": {
-        "Decouple\\CLI\\": ""
+    "autoload": {
+        "psr-4": {
+            "Decouple\\CLI\\Command\\": "Command/",
+            "Decouple\\CLI\\Request\\": "Request/",
+            "Decouple\\CLI\\": ""
+        }
     }
 }
