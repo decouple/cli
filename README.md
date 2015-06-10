@@ -1,4 +1,4 @@
-cli
+decouple/cli
 ===
 
-Hack command line utility created for Decouple framework.
+Hack command line tools created for Decouple framework.
