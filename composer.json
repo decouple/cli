@@ -1,6 +1,6 @@
 {
     "name": "decouple/cli",
-    "description": "Hack command line utility created for Decouple framework.",
+    "description": "Hack command line application container created for Decouple Framework.",
     "license": "MIT",
     "authors": [
         {
@@ -8,7 +8,11 @@
             "email": "drew@phenocode.com"
         }
     ],
-    "require": {},
+    "require": {
+      "decouple/common": "dev-master",
+      "decouple/decoupler": "dev-master",
+      "decouple/registry": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "Decouple\\CLI\\Command\\": "Command/",
