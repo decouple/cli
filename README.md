@@ -51,4 +51,5 @@ $services = Map {
 };
 $app->addServices($services);
 
+$app->execute();
 ```
