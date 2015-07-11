@@ -39,7 +39,7 @@ class App {
     public Paths $paths,
     ?Vector<string> $commands = null,
   ) {
-    $this->commands = Vector {'Decouple\CLI\Command\VersionCommand'};
+    $this->commands = Map {'decouple:version' => 'Decouple\CLI\Command\VersionCommand'};
     $this->config = Map {};
     if (!is_null($commands)) {
       $this->registerCommands($commands);
