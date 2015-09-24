@@ -116,7 +116,7 @@ class App {
    * @param  mixed $command      A command classname or instance
    * @return void
    */
-  public function registerCommand(mixed $command): void {
+  public function registerCommand(string $command): void {
     if (!$command instanceof CommandInterface && !class_exists($command)) {
       throw new Command\CommandNotFoundException((string) $command);
     }
