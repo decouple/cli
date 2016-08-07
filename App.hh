@@ -49,8 +49,8 @@ class App {
    * Execute the application container based on the given request and commands
    * @return mixed  Returns the result of the command execution
    */
-  public function execute(): mixed {
-    $command = $this->request->getArg(0)->getVariable();
+  public function execute(int $argOffset=0): mixed {
+    $command = $this->request->getArg($argOffset)->getVariable();
     $command = $this->getCommand($command);
     if ($command instanceof AwaitableCommand) {
       return $command->execute()->getWaitHandle()->join();
