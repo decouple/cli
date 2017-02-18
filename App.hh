@@ -53,7 +53,7 @@ class App {
     $command = $this->request->getArg($argOffset)->getVariable();
     $command = $this->getCommand($command);
     if ($command instanceof AwaitableCommand) {
-      return $command->execute()->getWaitHandle()->join();
+      \HH\Asio\join($command->execute()->getWaitHandle());
     } else if ($command instanceof CommandInterface) {
       return $command->execute();
     }
